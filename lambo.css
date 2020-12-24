@@ -1,0 +1,121 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+
+.sky
+{
+    height:100vh;
+    width:100%;
+    position:absolute;
+    background-image:url('cloud.jpg');
+    background-repeat: no-repeat;
+}
+
+.trees
+{
+    height:100vh;
+    width:100%;
+    background-image: url('bush.png');
+    background-size: cover;
+    position:absolute;
+    top:-144px;
+}
+
+.track
+{
+    height:60vh;
+    width:100%;
+    background-image: url('road.png');
+    background-size: cover;
+    position:absolute;
+    top:70vh;
+    
+}
+.kanga img
+{
+    
+    left:300px;
+    bottom:-284px;
+    position:relative;
+    animation: kangaMove linear 6s infinite;
+}
+.turtle img
+{
+    left:450px;
+    bottom:-400px;
+    position:relative;
+    animation: turMove linear 8s infinite;
+}
+.car
+{
+    height:100px;
+    width:320px;
+    background-image: url('gaadi.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    position:absolute;
+    left:444px;
+    bottom:25vh;
+    animation: carMove linear 6s infinite;
+}
+
+.wheel1 img
+{
+     width:77px;
+     position:relative;
+     top:32px;
+     left:33px;
+     animation: wheelRotation linear .6s infinite;
+}
+.wheel2
+{
+    width:77px;
+    position:relative;
+    top:-39px;
+    left:214px;
+    animation: wheelRotation linear .6s infinite;
+}
+
+@keyframes wheelRotation
+{
+    100%
+    {
+        transform:rotate(360deg);
+    }
+}
+
+@keyframes carMove
+{
+    100%
+    {
+        transform:translateX(70vw);
+    }
+}
+@keyframes turMove
+{
+    100%
+    {
+        transform:translateX(140px);
+    }
+}
+@keyframes kangaMove
+{
+    0%
+    {
+        transform:translateX(100vw);
+        transform:translateY(15px);
+    }
+    50%
+    {
+        transform:translateX(100vw);
+        transform:translateY(-15px);
+    }
+    100%
+    {
+        transform:translateX(100vw);
+        transform:translateY(15px);
+        
+    }
+}
